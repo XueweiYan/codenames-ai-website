@@ -36,3 +36,7 @@ After creating the framework for the relatively simple game rules, the framework
 Our main takeaway for this project has been twofold. The first is that creating a AI teammate for a game about word relationships is very much possible. The performance of our bot is very good for the relatively simple rules of this game, and given time, could be expanded into a more complex implementation of Codenames. Secondly, the creation of an AI for an examination of relationships between words using vector embeddings and similarities may not be the most efficient way to achieve this result. While our AI does achieve good scores for Human/AI interaction, it is not as accurate as a full Human team, nor is it as efficient as a full AI team. With the difficulties we had in adjusting the hyperparameters for this strategy to allow for functional Human/AI interaction, we believe using other strategies to achieve the same result would be more effective at simulating the thought process of a human mind when it comes to Codenames.
 
 ![codenames_acc_v_std](img/ai_acc_v_std.png)
+
+If you'd like to see run the analysis and testing for this project, go to this [Github repository](https://github.com/YongqingLi14/codenames-ai-analysis).
+
+If you'd like to play the game, go to this [repository](https://github.com/XueweiYan/codenames-game-ai).
