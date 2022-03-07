@@ -45,7 +45,7 @@ Performance of teams with an AI Spymaster and human Guessers are tested in order
 Our main takeaway for this project has been twofold. The first is that creating a AI teammate for a game about word relationships is very much possible. The performance of our bot is very good for the relatively simple rules of this game, and given time, could be expanded into a more complex implementation of Codenames. Secondly, the creation of an AI for an examination of relationships between words using vector embeddings and similarities may not be the most efficient way to achieve this result. While our AI does achieve good scores for Human/AI interaction, it is not as accurate as a full Human team, nor is it as efficient as a full AI team. With the difficulties we had in adjusting the hyperparameters for this strategy to allow for functional Human/AI interaction, we believe using other strategies to achieve the same result would be more effective at simulating the thought process of a human mind when it comes to Codenames.
 
 <p align="center">
-  <img src="https://github.com/XueweiYan/codenames-ai-website/blob/main/img/ai_acc_v_st.png" />
+  <img src="https://github.com/XueweiYan/codenames-ai-website/blob/main/img/ai_acc_v_std.png" />
 </p>
 We compared our human and AI accuracies and standard deviations to observe how well our human tests did compared to the AI tests.
 
