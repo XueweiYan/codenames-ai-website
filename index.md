@@ -22,7 +22,10 @@ Given its knowledge base, the AI Spymaster then compares one of its teams' words
 
 For an only AI team, this process is incredibly efficient. Since both the Agents and Spymaster have exactly the same knowledge base, the AI team can guess words nearly perfectly every time. We see on average that only 2 turns are needed for the game to finish, and perfect accuracy in identifying the intended words.
 
-![codenames_ai_ai_turns](img/ai_turns.png =200x) ![codenames_ai_ai_accuracy](img/ai_accuracy.png=200x)
+<p float="left">
+  <img src="https://github.com/XueweiYan/codenames-ai-website/blob/main/img/ai_turns.png" width = 500>
+  <img src="https://github.com/XueweiYan/codenames-ai-website/blob/main/img/ai_accuracy.png" width  =500>
+</p>
 
 Where there is less certainty in performance is when the AI is forced to deal with a human teammate. Due to the difference in knowledge and thought process between the bot and  human, we had to design the bot to change strategies with a human teammate. An AI Spymaster has to give hints that are more obviously related to the words on the board, and an AI Agent has to be more accurate and conservative with its guesses. Thus, the weights of each word must be different for an AI Spymaster to generate the best hint for its human teammates. This is needed to compensate for the difference in thought process and fine tuning the various hyper-parameters required for understandable AI/Human interaction took the longest out of this entire project.
 
@@ -32,13 +35,18 @@ After creating the framework for the relatively simple game rules, the framework
 
 Performance of teams with an AI Spymaster and human Guessers are tested in order to understand the effectiveness in their communication. Compared to an all AI team, the AI/Human team took more turns to finish the and its accuracy in uncovering the team words has dropped. This result is expected as there exists a gap between the AI and human knowledge base.
 
-![codenames_human_turns](img/human_turns.png =200x) ![codenames_human_acc](img/human_accuracy.png =200x)
+<p float="left">
+  <img src="https://github.com/XueweiYan/codenames-ai-website/blob/main/img/human_turns.png" width = 500>
+  <img src="https://github.com/XueweiYan/codenames-ai-website/blob/main/img/human_accuracy.png" width = 500>
+</p>
 
 ## What we learned
 
 Our main takeaway for this project has been twofold. The first is that creating a AI teammate for a game about word relationships is very much possible. The performance of our bot is very good for the relatively simple rules of this game, and given time, could be expanded into a more complex implementation of Codenames. Secondly, the creation of an AI for an examination of relationships between words using vector embeddings and similarities may not be the most efficient way to achieve this result. While our AI does achieve good scores for Human/AI interaction, it is not as accurate as a full Human team, nor is it as efficient as a full AI team. With the difficulties we had in adjusting the hyperparameters for this strategy to allow for functional Human/AI interaction, we believe using other strategies to achieve the same result would be more effective at simulating the thought process of a human mind when it comes to Codenames.
 
-![codenames_acc_v_std](img/ai_acc_v_std.png)
+<p align="center">
+  <img src="https://github.com/XueweiYan/codenames-ai-website/blob/main/img/ai_acc_v_st.png" />
+</p>
 We compared our human and AI accuracies and standard deviations to observe how well our human tests did compared to the AI tests.
 
 If you'd like to see run the analysis and testing for this project, go to this *[Github repository](https://github.com/YongqingLi14/codenames-ai-analysis)*.
