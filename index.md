@@ -22,7 +22,7 @@ Given its knowledge base, the AI Spymaster then compares one of its teams' words
 
 For an only AI team, this process is incredibly efficient. Since both the Agents and Spymaster have exactly the same knowledge base, the AI team can guess words nearly perfectly every time. We see on average that only 2 turns are needed for the game to finish, and perfect accuracy in identifying the intended words.
 
-![codenames_ai_ai_turns](img/ai_turns.png) ![codenames_ai_ai_accuracy](img/ai_accuracy.png)
+![codenames_ai_ai_turns](img/ai_turns.png =200x) ![codenames_ai_ai_accuracy](img/ai_accuracy.png=200x)
 
 Where there is less certainty in performance is when the AI is forced to deal with a human teammate. Due to the difference in knowledge and thought process between the bot and  human, we had to design the bot to change strategies with a human teammate. An AI Spymaster has to give hints that are more obviously related to the words on the board, and an AI Agent has to be more accurate and conservative with its guesses. Thus, the weights of each word must be different for an AI Spymaster to generate the best hint for its human teammates. This is needed to compensate for the difference in thought process and fine tuning the various hyper-parameters required for understandable AI/Human interaction took the longest out of this entire project.
 
@@ -32,7 +32,7 @@ After creating the framework for the relatively simple game rules, the framework
 
 Performance of teams with an AI Spymaster and human Guessers are tested in order to understand the effectiveness in their communication. Compared to an all AI team, the AI/Human team took more turns to finish the and its accuracy in uncovering the team words has dropped. This result is expected as there exists a gap between the AI and human knowledge base.
 
-![codenames_human_turns](img/human_turns.png) ![codenames_human_acc](img/human_accuracy.png)
+![codenames_human_turns](img/human_turns.png =200x) ![codenames_human_acc](img/human_accuracy.png =200x)
 
 ## What we learned
 
