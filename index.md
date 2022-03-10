@@ -7,7 +7,7 @@ Codenames is a board game with a fairly simple premise, guessing words. There ar
 
 Each team has a set of agent words that they have to guess on the board. In order to help the teams guess the correct word, each team has one designated Spymaster, who can see the words their team must guess to win as well as the identity of all other words on the board.
 
-(Red represents Team A, Blue represents Team B, Yellow represents Neutral cards, Pink represents Assassin card)
+(Red = Team A, Blue = Team B, Yellow = Neutral cards, Pink = Assassin card)
 
 ![codenames_spymaster_view](img/codenames_game_example_1.png)
 
@@ -28,8 +28,8 @@ Given its knowledge base, the AI Spymaster then compares one of its teams' words
 For an only AI team, this process is incredibly efficient. Since both the Agents and Spymaster have exactly the same knowledge base, the AI team can guess words nearly perfectly every time. We see on average that only 2 turns are needed for the game to finish, and perfect accuracy in identifying the intended words.
 
 <p float="left">
-  <img src=img/ai_turns.png width = 500>
-  <img src=img/ai_accuracy.png width  =500>
+  <img src=img/ai_turns.png width = 500/>
+  <img src=img/ai_accuracy.png width  =500/>
 </p>
 
 Where there is less certainty in performance is when the AI is forced to deal with a human teammate. Due to the difference in knowledge and thought process between the bot and  human, we had to design the bot to change strategies with a human teammate. An AI Spymaster has to give hints that are more obviously related to the words on the board, and an AI Agent has to be more accurate and conservative with its guesses. Thus, the weights of each word must be different for an AI Spymaster to generate the best hint for its human teammates. This is needed to compensate for the difference in thought process and fine tuning the various hyper-parameters required for understandable AI/Human interaction took the longest out of this entire project.
