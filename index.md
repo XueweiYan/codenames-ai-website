@@ -27,10 +27,9 @@ Given its knowledge base, the AI Spymaster then compares one of its teams' words
 
 For an only AI team, this process is incredibly efficient. Since both the Agents and Spymaster have exactly the same knowledge base, the AI team can guess words nearly perfectly every time. We see on average that only 2 turns are needed for the game to finish, and perfect accuracy in identifying the intended words.
 
-<p float="left">
-  <img src=img/ai_turns.png width = 500/>
-  <img src=img/ai_accuracy.png width  =500/>
-</p>
+![codenames_spymaster_view](img/ai_turns.png)
+![codenames_spymaster_view](img/ai_accuracy.png)
+
 
 Where there is less certainty in performance is when the AI is forced to deal with a human teammate. Due to the difference in knowledge and thought process between the bot and  human, we had to design the bot to change strategies with a human teammate. An AI Spymaster has to give hints that are more obviously related to the words on the board, and an AI Agent has to be more accurate and conservative with its guesses. Thus, the weights of each word must be different for an AI Spymaster to generate the best hint for its human teammates. This is needed to compensate for the difference in thought process and fine tuning the various hyper-parameters required for understandable AI/Human interaction took the longest out of this entire project.
 
@@ -42,16 +41,12 @@ After creating the framework for the relatively simple game rules, the framework
 
 Performance of teams with an AI Spymaster and human Guessers are tested in order to understand the effectiveness in their communication. Compared to an all AI team, the AI/Human team took more turns to finish the game and its accuracy in uncovering the team words has dropped. This result is expected as there exists a gap between the AI and human knowledge base.
 
-<p float="left">
-  <img src="https://github.com/XueweiYan/codenames-ai-website/blob/main/img/human_turns.png" width = "500">
-  <img src="https://github.com/XueweiYan/codenames-ai-website/blob/main/img/human_accuracy.png" width = "500">
-</p>
+![codenames_spymaster_view](img/human_turns.png)
+![codenames_spymaster_view](img/human_accuracy.png)
 
 We were also curious on the amount of distraction needed for an AI guesser to behave like a human. Thus we introduced a confusion matrix in the algorithm to add noise for the AI guesser. We sampled the matrix from a Gaussian distribution with mean 0 and standard deviation σ. Because each dataset utilized different measurements, we rescaled each σ for all three datasets accordingly.  We observed a σc/σm value of 0.5 for GloVe and Word2Vec and 1.5 for WordNet to produce a similar performance to humans in terms of accuracy.   
 
-<p align="center">
-  <img src="https://github.com/XueweiYan/codenames-ai-website/blob/main/img/ai_acc_v_std.png" width = 500/>
-</p>
+![codenames_spymaster_view](img/ai_acc_v_std.png.png)
 
 ## What We Learned
 
