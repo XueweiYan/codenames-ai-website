@@ -27,8 +27,7 @@ Given its knowledge base, the AI Spymaster then compares one of its teams' words
 
 For an only AI team, this process is incredibly efficient. Since both the Agents and Spymaster have exactly the same knowledge base, the AI team can guess words nearly perfectly every time. We see on average that only 2 turns are needed for the game to finish, and perfect accuracy in identifying the intended words.
 
-![codenames_spymaster_view](img/ai_turns.png)
-![codenames_spymaster_view](img/ai_accuracy.png)
+![codenames_spymaster_view](img/ai_turns.png)![codenames_spymaster_view](img/ai_accuracy.png)
 
 
 Where there is less certainty in performance is when the AI is forced to deal with a human teammate. Due to the difference in knowledge and thought process between the bot and  human, we had to design the bot to change strategies with a human teammate. An AI Spymaster has to give hints that are more obviously related to the words on the board, and an AI Agent has to be more accurate and conservative with its guesses. Thus, the weights of each word must be different for an AI Spymaster to generate the best hint for its human teammates. This is needed to compensate for the difference in thought process and fine tuning the various hyper-parameters required for understandable AI/Human interaction took the longest out of this entire project.
@@ -57,4 +56,4 @@ If you'd like to play the game, visit this *[Github repository](https://github.c
 
 If you'd like to see run the analysis and testing for this project, visit this *[Github repository](https://github.com/YongqingLi14/codenames-ai-analysis)*.
 
-If you'd like more details on this project, visit this *[page](https://github.com/YongqingLi14/artifact-directory-template/blob/main/report.pdf).
+If you'd like more details on this project, visit this *[Page](https://github.com/YongqingLi14/artifact-directory-template/blob/main/report.pdf).
