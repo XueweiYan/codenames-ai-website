@@ -56,4 +56,4 @@ If you'd like to play the game, visit this *[Github repository](https://github.c
 
 If you'd like to see run the analysis and testing for this project, visit this *[Github repository](https://github.com/YongqingLi14/codenames-ai-analysis)*.
 
-If you'd like more details on this project, visit this *[Page](https://github.com/YongqingLi14/artifact-directory-template/blob/main/report.pdf).
+If you'd like more details on this project, visit this *[Page](https://github.com/YongqingLi14/artifact-directory-template/blob/main/report.pdf)*.
